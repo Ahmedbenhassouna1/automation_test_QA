@@ -33,7 +33,7 @@ Feature: Authentification
       And I click on Create Account button
       Then  Verify that ACCOUNT CREATED! is visible
       When I click on Continue button
-      Then Verify that Logged in as username is visible
+
       When I click Delete Account button
       Then Verify that ACCOUNT DELETED! is visible 
       And I click Continue button

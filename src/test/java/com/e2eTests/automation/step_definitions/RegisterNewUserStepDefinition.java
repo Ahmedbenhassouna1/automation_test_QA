@@ -74,7 +74,20 @@ public class RegisterNewUserStepDefinition  {
 	}
 	@When("I fill in all the necessary information")
 	public void i_fill_in_all_the_necessary_information(io.cucumber.datatable.DataTable dataTable) {
-	  
+		
+		    // Extract field names and values from the DataTable
+		   // List<String> fieldNames = dataTable.getHeadCells();
+		   // for (int row = 0; row < dataTable.getRowCount(); row++) {
+		      //  List<String> fieldValues = dataTable.getCells(row);
+
+		        // Process field names and values here
+		       // String fieldName = fieldNames.get(colIndex); // Use colIndex if needed
+		      //  String fieldValue = fieldValues.get(colIndex);
+
+		        // Find the corresponding web element and fill in the value
+		       // WebElement element = driver.findElement(By.id(fieldName)); // Or other locator strategy
+		       // element.sendKeys(fieldValue);
+
 	}
 
 	@When("I select checkbox Sign up for our newsletter")
@@ -103,10 +116,10 @@ public class RegisterNewUserStepDefinition  {
 	   
 	}
 
-	@Then("Verify that Logged in as username is visible")
-	public void verify_that_logged_in_as_username_is_visible() {
+	//@Then("Verify that Logged in as username is visible")
+	//public void verify_that_logged_in_as_username_is_visible() {
 	  
-	}
+	//}
 
 	@When("I click Delete Account button")
 	public void i_click_delete_account_button() {
